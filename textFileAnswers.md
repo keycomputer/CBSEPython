@@ -5,7 +5,7 @@ def displayVote():
 
      file1 = open("Elections.txt", "r")
      List1 = file1.readlines()
-     for i in List1:
+     for i in List1: # LINE BY LINE TRAVERSE 
          List2 = i.split() ## list of words  in a sentence 
          if "vote" in List2 :
              print(i)
